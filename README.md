@@ -5,6 +5,6 @@ This is a simple implementation of a weather forecast API using Node.js and a si
 ### The following implementations are ready:
 
 - [x] Weather API with Node.js
-- [ ] Simple Web Page with React and Next.js
+- [x] Simple Web Page with React and Next.js
 - [ ] Dockerfiles
 - [ ] Kubernetes Configurations

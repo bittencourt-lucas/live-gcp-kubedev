@@ -1,6 +1,7 @@
 import 'dotenv/config';
 
 import express from 'express';
+import cors from 'cors';
 
 import geocode from './utils/geocode';
 import forecast from './utils/forecast';
@@ -9,6 +10,7 @@ const app = express();
 const port = 3011;
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/weather', (req, res) => {
   const { address } = req.query;

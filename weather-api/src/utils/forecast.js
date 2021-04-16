@@ -3,7 +3,9 @@ import request from 'request';
 const forecast = (latitude, longitude, callback) => {
   const url = `https://api.darksky.net/forecast/${
     process.env.FORECAST_ACCESS_TOKEN
-  }/${encodeURIComponent(latitude)},${encodeURIComponent(longitude)}`;
+  }/${encodeURIComponent(latitude)},${encodeURIComponent(
+    longitude,
+  )}?lang=pt&units=si`;
   request({ url, json: true }, (err, { body }) => {
     if (err) {
       callback('Weather service is unavailable', undefined);
