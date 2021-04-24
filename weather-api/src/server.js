@@ -1,10 +1,10 @@
-import 'dotenv/config';
+require('dotenv').config();
 
-import express from 'express';
-import cors from 'cors';
+const express = require('express');
+const cors = require('cors');
 
-import geocode from './utils/geocode';
-import forecast from './utils/forecast';
+const geocode = require('./utils/geocode');
+const forecast = require('./utils/forecast');
 
 const app = express();
 const port = 3011;

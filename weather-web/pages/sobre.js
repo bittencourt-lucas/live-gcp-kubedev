@@ -9,7 +9,7 @@ function Sobre() {
       <div className="main-content">
         <Header title="Sobre Mim" />
         <Image
-          src='/../public/assets/lbittencourt.png'
+          src='/assets/lbittencourt.png'
           alt='Uma foto do autor da página'
           width={300}
           height={400}
